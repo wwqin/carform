@@ -1,0 +1,39 @@
+/*清除样式*/
+body,h1,h2,h3,h4,h5,h6,p,textarea,i,a,div,input,img,button,dd,dl,dt,td,tr,tbody,thead,th,td,ol,ul,li,span,code,pre,header,section,footer,figure,figcaption,q,blockquote,small,label{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    font-size: 14px;
+    font-family: 微软雅黑 sans-serif;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+ul,ol{
+    list-style: none;
+}
+input,textarea,button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+}
+img{
+    border: none;
+}
+p,q,h1,h2,h3,h4,h5,h6,blockquote{
+    user-select: none;
+}
+
+/*公共样式*/
+.clearfix::before,.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both
+}

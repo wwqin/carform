@@ -1,0 +1,392 @@
+@charset "utf-8";
+body {
+  overflow-y: scroll;
+}
+.hidden {
+  display: none;
+}
+.active {
+  display: block;
+}
+.container {
+  width: 100%;
+  /*帮助界面*/
+  /*登陆*/
+  /*个人信息*/
+  /*车友信息*/
+}
+.container .plus-info {
+  width: 100%;
+  height: 1000px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.container .plus-info .input-info-box {
+  width: 36%;
+  height: 66%;
+  margin: 27px auto;
+  border: 1.5px solid #333333;
+  border-radius: 5px;
+}
+.container .plus-info .input-info-box ul {
+  margin: 35px 0 0 45px;
+}
+.container .plus-info .input-info-box ul li {
+  width: 450px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  height: 35px;
+  line-height: 35px;
+  margin: 16px 0;
+}
+.container .plus-info .input-info-box ul li#button {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #0b76ac;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  text-align: center;
+}
+.container .plus-info .input-info-box ul li#button:hover {
+  cursor: pointer;
+}
+.container .plus-info .input-info-box ul li#sex {
+  border: none;
+}
+.container .plus-info .input-info-box ul li#sex:last-of-type {
+  margin-left: 100px;
+}
+.container .plus-info .input-info-box ul li input {
+  padding: 2px 0;
+  text-indent: 1em;
+}
+.container .car-friend-header {
+  width: 100%;
+  height: 60px;
+  background-color: #1f1a17;
+}
+.container .car-friend-header .contentbox div {
+  float: left;
+  color: white;
+}
+.container .car-friend-header .contentbox .left-box .imagebox {
+  margin: 8px 10px 0 15px;
+}
+.container .car-friend-header .contentbox .left-box .imagebox img {
+  display: block;
+  width: 113.42857143px;
+  height: 42.85714286px;
+}
+.container .car-friend-header .contentbox .middle-box {
+  margin: 12px 0 0 10px;
+}
+.container .car-friend-header .contentbox .right-box {
+  float: right;
+  margin-right: 25px;
+  margin-top: 18px;
+}
+.container .car-friend-header .contentbox .right-box .header-login {
+  margin-right: 15px;
+}
+.container .car-friend-header .contentbox .right-box .header-login:hover {
+  cursor: pointer;
+}
+.container .car-friend-header .contentbox .right-box .header-login:hover p,
+.container .car-friend-header .contentbox .right-box .header-login:hover i {
+  color: #cccccc;
+}
+.container .car-friend-header .contentbox .right-box .header-login .header-login-box i {
+  display: inline-block;
+  padding: 0 10px;
+}
+.container .car-friend-header .contentbox .right-box .header-login .header-login-box p {
+  display: inline-block;
+}
+.container .car-friend-header .contentbox .right-box .header-logup:hover {
+  cursor: pointer;
+}
+.container .car-friend-header .contentbox .right-box .header-logup:hover p,
+.container .car-friend-header .contentbox .right-box .header-logup:hover .logup-icon {
+  color: #cccccc;
+}
+.container .car-friend-header .contentbox .right-box .header-logup .header-logup-box {
+  margin-right: 25px;
+}
+.container .car-friend-header .contentbox .right-box .header-logup .header-logup-box i {
+  display: inline-block;
+  padding: 0 10px;
+}
+.container .car-friend-header .contentbox .right-box .header-logup .header-logup-box p {
+  display: inline-block;
+}
+.container .car-friend-content {
+  width: 100%;
+}
+.container .car-friend-content .left-side {
+  float: left;
+  width: 300px;
+  height: 1200px;
+  border-right: 1px solid #cccccc;
+  background-color: #f0f2f4;
+}
+.container .car-friend-content .left-side .left-side-content {
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #333333;
+}
+.container .car-friend-content .left-side .left-side-content ul li {
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #cccccc;
+}
+.container .car-friend-content .left-side .left-side-content ul li:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.container .car-friend-content .left-side .left-side-content ul li p {
+  display: inline-block;
+}
+.container .car-friend-content .left-side .left-side-content ul li i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+.container .help .help-page-content {
+  margin: 0 30px;
+}
+.container .help .help-page-content .content-info {
+  padding: 20px 240px 30px 10px;
+  border-bottom: 1px solid #cccccc;
+}
+.container .help .help-page-content .content-info h1 {
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
+}
+.container .help .help-page-content .content-info p {
+  line-height: 36px;
+}
+.container .help .help-page-content .main-functions h1 {
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 10px 0;
+}
+.container .help .help-page-content .main-functions ul {
+  text-indent: 1.5em;
+}
+.container .help .help-page-content .main-functions ul li {
+  border-bottom: 1px solid #cccccc;
+  padding: 15px 0;
+}
+.container .help .help-page-content .main-functions ul li label {
+  font-size: 18px;
+  font-weight: bold;
+}
+.container .help .help-page-content .main-functions ul li p {
+  margin: 10px 15px;
+  line-height: 36px;
+}
+.container .log-in .login-page {
+  margin: 30px 0 0 50px;
+}
+.container .log-in .login-page .am-form .login-group {
+  margin: 40px 0;
+  /*注册按钮*/
+}
+.container .log-in .login-page .am-form .login-group label {
+  width: 200px;
+  text-align: right;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.container .log-in .login-page .am-form .login-group .input-box {
+  display: inline-block;
+}
+.container .log-in .login-page .am-form .login-group .input-box input {
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  width: 500px;
+  height: 40px;
+  text-indent: 1em;
+  border-radius: 4px;
+}
+.container .log-in .login-page .am-form .login-group .input-box textarea {
+  width: 500px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  /*不可改变大小*/
+  resize: none;
+}
+.container .log-in .login-page .am-form .login-group .log-up {
+  overflow: hidden;
+  width: 100px;
+  height: 45px;
+  background-color: #0b76ac;
+  border-radius: 4px;
+  color: white;
+  line-height: 45px;
+  text-align: center;
+  margin: 40px 0 0 220px;
+}
+.container .log-in .login-page .am-form .login-group .log-up:hover {
+  cursor: pointer;
+}
+.container .right-side {
+  float: left;
+  width: 1200px;
+}
+.container .right-side .car-friend-info {
+  width: 100%;
+}
+.container .right-side .car-friend-info .user-info-header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #cccccc;
+}
+.container .right-side .car-friend-info .user-info-header .user-information {
+  padding: 20px 0 0 15px;
+}
+.container .right-side .car-friend-info .user-info-header .user-information h2 {
+  display: inline-block;
+  color: #1f1a17;
+}
+.container .right-side .car-friend-info .user-info-header .user-information span {
+  font-size: 20px;
+}
+.container .right-side .car-friend-info .user-info-header .user-information p {
+  display: inline-block;
+}
+.container .right-side .car-friend-info .serious-operates {
+  margin: 25px 0 15px 35px;
+}
+.container .right-side .car-friend-info .serious-operates ul li {
+  float: left;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates1 {
+  background-color: #f7f7f9;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates1 .plus-save-delete ul {
+  height: 30px;
+  border: 1px solid #cccccc;
+  border-right: none;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates1 .plus-save-delete ul form {
+  display: inline-block;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates1 .plus-save-delete ul form select {
+  width: 100px;
+  height: 32px;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates1 .plus-save-delete ul li {
+  font-size: 12px;
+  float: left;
+  width: 65px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-right: 1px solid #cccccc;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates1 .plus-save-delete ul li:hover {
+  cursor: pointer;
+  background-color: #f0f2f4;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates1 .plus-save-delete ul li i {
+  display: inline-block;
+  padding-right: 2px;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates1 .plus-save-delete ul li p {
+  display: inline-block;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates2 {
+  float: right;
+  margin-right: 35px;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates2 .search {
+  width: 300px;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates2 .search input {
+  width: 270px;
+}
+.container .right-side .car-friend-info .serious-operates ul li#serious-operates2 .search i:hover {
+  cursor: pointer;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr {
+  height: 30px;
+  border: none;
+  text-align: center;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr td {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr .name {
+  width: 100px;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr .nickname {
+  width: 100px;
+  padding: 5px 0;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr .gender {
+  width: 40px;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr .occupation {
+  width: 60px;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr .drive-ages {
+  width: 45px;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr .plate-number {
+  text-transform: uppercase;
+  width: 160px;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr .color {
+  width: 58px;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr .age {
+  width: 58px;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr .type {
+  width: 112px;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr td:last-of-type .am-btn-toolbar .am-btn-group .am-btn {
+  display: inline-block;
+  width: 70px;
+  line-height: 25px;
+  text-align: center;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr td:last-of-type .am-btn-toolbar .am-btn-group .am-btn .button-style {
+  margin-left: 10px;
+  width: 50px;
+  height: 25px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr td:last-of-type .am-btn-toolbar .am-btn-group .am-btn .button-style:hover {
+  cursor: pointer;
+  background-color: #f2dede;
+  color: #000000;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr td:last-of-type .am-btn-toolbar .am-btn-group .am-btn .button-style i {
+  display: inline-block;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr td:last-of-type .am-btn-toolbar .am-btn-group .am-btn .button-style p {
+  display: inline-block;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr td:last-of-type .am-btn-toolbar .am-btn-group .am-text-secondary {
+  color: #0a6999;
+}
+.container .right-side .car-friend-info .all-user-info .user-info-form .table-striped tbody tr td:last-of-type .am-btn-toolbar .am-btn-group .am-text-danger {
+  color: #ac2925;
+}

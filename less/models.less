@@ -1,0 +1,432 @@
+@charset "utf-8";
+
+body{
+  overflow-y: scroll;
+}
+.hidden{
+  display: none;
+}
+.active{
+  display: block;
+}
+.container{
+  width: 100%;
+  .plus-info{
+    width: 100%;
+    height: 1000px;
+    position: fixed;
+    background-color: rgba(255,255,255,0.8);
+    .input-info-box{
+      width: 36%;
+      height: 66%;
+      margin: 27px auto;
+      border: 1.5px solid #333333;
+      border-radius: 5px;
+      ul{
+        margin: 35px 0 0 45px;
+        li{
+          width: 450px;
+          border: 1px solid #000000;
+          border-radius: 4px;
+          height: 35px;
+          line-height: 35px;
+          margin: 16px 0;
+          &#button{
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #0b76ac;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            text-align: center;
+            &:hover{
+              cursor: pointer;
+            }
+          }
+          &#sex{
+            border: none;
+            &:last-of-type{
+              margin-left: 100px;
+            }
+          }
+          input{
+            padding: 2px 0;
+            text-indent: 1em;
+          }
+        }
+      }
+    }
+  }
+  .car-friend-header{
+    width: 100%;
+    height: 60px;
+    background-color: #1f1a17;
+    .contentbox{
+      div{
+        float: left;
+        color: white;
+      }
+      .left-box{
+        .imagebox{
+          margin: 8px 10px 0 15px;
+          img{
+            display: block;
+            width: 794/7px;
+            height: 300/7px;
+          }
+        }
+      }
+      .middle-box{
+        margin:12px 0 0 10px;
+      }
+      .right-box{
+        float: right;
+        margin-right: 25px;
+        margin-top: 18px;
+        .header-login{
+          &:hover{
+            cursor: pointer;
+          }
+          &:hover p,&:hover i{
+            color: #cccccc;
+          }
+          margin-right: 15px;
+          .header-login-box{
+            i{
+              display: inline-block;
+              padding: 0 10px;
+            }
+            p{
+              display: inline-block;
+            }
+          }
+        }
+        .header-logup{
+          &:hover{
+            cursor: pointer;
+          }
+          &:hover p,&:hover .logup-icon{
+            color: #cccccc;
+          }
+          .header-logup-box{
+            margin-right: 25px;
+            i{
+              display: inline-block;
+              padding: 0 10px;
+            }
+            p{
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .car-friend-content{
+    width: 100%;
+    .left-side{
+      float: left;
+      width: 300px;
+      height: 1200px;
+      border-right: 1px solid #cccccc;
+      background-color: #f0f2f4;
+      .left-side-content{
+        padding: 15px 20px;
+        font-size: 18px;
+        color: #333333;
+        ul{
+          li{
+            height: 60px;
+            line-height: 60px;
+            border-bottom: 1px solid #cccccc;
+            &:hover{
+              cursor: pointer;
+              opacity: 0.9;
+            }
+            p{
+              display: inline-block;
+            }
+            i{
+              font-size: 20px;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*帮助界面*/
+  .help{
+    .help-page-content{
+      margin:0 30px;
+      .content-info{
+        padding: 20px 240px 30px 10px;
+        border-bottom: 1px solid #cccccc;
+        h1{
+          font-weight: normal;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          margin-bottom: 10px;
+        }
+        p{
+          line-height: 36px;
+        }
+      }
+      .main-functions{
+        h1{
+          font-weight: normal;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          margin:10px 0;
+        }
+        ul{
+          text-indent: 1.5em;
+          li{
+            border-bottom: 1px solid #cccccc;
+            padding: 15px 0;
+            label{
+              font-size: 18px;
+              font-weight: bold;
+            }
+            p{
+              margin: 10px 15px;
+              line-height: 36px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*登陆*/
+  .log-in{
+    .login-page{
+      margin:30px 0 0 50px;
+      .am-form{
+        .login-group{
+          margin: 40px 0;
+          label{
+            width: 200px;
+            text-align: right;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 15px;
+          }
+          .input-box{
+            display: inline-block;
+            input{
+              font-size: 16px;
+              border: 1px solid #cccccc;
+              width: 500px;
+              height: 40px;
+              text-indent: 1em;
+              border-radius: 4px;
+            }
+            textarea{
+              width: 500px;
+              border: 1px solid #cccccc;
+              border-radius: 2px;
+              /*不可改变大小*/
+              resize: none;
+            }
+          }
+          /*注册按钮*/
+          .log-up{
+            overflow: hidden;
+            width: 100px;
+            height: 45px;
+            background-color: #0b76ac;
+            border-radius: 4px;
+            color: white;
+            line-height: 45px;
+            text-align: center;
+            margin:40px 0 0 220px;
+            input{
+              height: 45px;
+            }
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*个人信息*/
+  /*车友信息*/
+  .right-side{
+    float: left;
+    width: 1200px;
+    .car-friend-info{
+      width: 100%;
+      .user-info-header{
+        width: 100%;
+        height: 80px;
+        border-bottom: 1px solid #cccccc;
+        .user-information{
+          padding: 20px 0 0 15px;
+          h2{
+            display: inline-block;
+            color: #1f1a17;
+          }
+          span{
+            font-size: 20px;
+          }
+          p{
+            display: inline-block;
+          }
+        }
+      }
+      .serious-operates{
+        margin: 25px 0 15px 35px;
+        ul{
+          li{
+            float: left;
+          }
+          li#serious-operates1{
+            background-color: #f7f7f9;
+            .plus-save-delete{
+              ul{
+                height: 30px;
+                border: 1px solid #cccccc;
+                border-right: none;
+                form{
+                  display: inline-block;
+                  select{
+                    width: 100px;
+                    height: 32px;
+                  }
+                }
+                li{
+                  font-size: 12px;
+                  float: left;
+                  width: 65px;
+                  height: 30px;
+                  line-height: 30px;
+                  text-align: center;
+                  border-right: 1px solid #cccccc;
+                  &:hover{
+                    cursor: pointer;
+                    background-color: #f0f2f4;
+                  }
+                  i{
+                    display: inline-block;
+                    padding-right: 2px;
+                  }
+                  p{
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+          }
+          li#serious-operates2{
+            float: right;
+            margin-right: 35px;
+            .search{
+              width: 300px;
+              height: 35px;
+              line-height: 35px;
+              padding-left: 10px;
+              border: 1px solid #cccccc;
+              border-radius: 4px;
+              input{
+                width: 270px;
+              }
+              i{
+                &:hover{
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+      .all-user-info{
+        .user-info-form{
+          .table-striped{
+            tbody{
+              tr{
+                height: 30px;
+                border: none;
+                text-align: center;
+                &:nth-of-type(odd){
+                  background-color: #f9f9f9;
+                }
+                td{
+                  padding: 0;
+                  margin: 0;
+                  border: none;
+                }
+                .name{
+                  width: 100px;
+                }
+                .nickname{
+                  width: 100px;
+                  padding: 5px 0;
+                }
+                .gender{
+                  width: 40px;
+                }
+                .occupation{
+                  width: 60px;
+                }
+                .drive-ages{
+                  width: 45px;
+                }
+                .plate-number{
+                  text-transform: uppercase;
+                  width: 160px;
+                }
+                .color{
+                  width: 58px;
+                }
+                .age{
+                  width: 58px;
+                }
+                .type{
+                  width: 112px;
+                }
+                td:last-of-type{
+                  .am-btn-toolbar{
+                    .am-btn-group{
+                      .am-btn{
+                        display: inline-block;
+                        width: 70px;
+                        line-height: 45px;
+                        text-align: center;
+                        .button-style{
+                          margin-left: 10px;
+                          &:hover{
+                            cursor: pointer;
+                            background-color: #f2dede;
+                            color: #000000;
+                          }
+                          width: 50px;
+                          height: 25px;
+                          border: 1px solid #cccccc;
+                          border-radius: 2px;
+                          i{
+                            display: inline-block;
+                          }
+                          p{
+                            display: inline-block;
+                          }
+                        }
+                      }
+                      .am-text-secondary{
+                        color: #0a6999;
+                      }
+                      .am-text-danger{
+                        color: #ac2925;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

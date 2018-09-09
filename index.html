@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>车友会</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="less/models.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+</head>
+
+<body>
+<div class="container">
+    <!--供用户输入内容     添加信息-->
+    <div class="plus-info hidden">
+        <div class="input-info-box">
+            <ul>
+                <li><input type="text" placeholder="请输入姓名/会员名" id="input-name"></li>
+                <li><input type="text" placeholder="请输入昵称" id="input-nickName"></li>
+                <li id="sex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="input-gender" name="brand" placeholder="请选择性别" value="男" checked="checked">男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="brand" placeholder="请选择性别" value="女">女</li>
+                <li><input type="text" placeholder="请输入您的职业" id="input-occupation"></li>
+                <li><input type="number" placeholder="请输入您的驾龄" id="input-drive-age"></li>
+                <li><input type="number" placeholder="请输入您的年龄" id="input-age"></li>
+                <li><input type="text" placeholder="请输入您的车辆品牌" id="input-type"></li>
+                <li><input type="number" placeholder="请输入您的购车款(单位：万元)" id="input-cost"></li>
+                <li><input type="text" placeholder="请输入您的车牌号" id="input-placeNumber"></li>
+                <li><input type="text" placeholder="请输入您的爱车颜色" id="input-color"></li>
+                <li style="border-color: white"><button onclick="box_hidden()">确 定</button></li>
+            </ul>
+        </div>
+    </div>
+    <header class="car-friend-header">
+        <div class="contentbox">
+            <div class="left-box">
+                <div class="imagebox">
+                    <img src="images/车友会logo.jpg" height="300" width="794"/>
+                </div>
+            </div>
+            <div class="middle-box">
+                <div class="title">
+                    <h2>车友会</h2>
+                </div>
+            </div>
+            <div class="right-box">
+                <div class="header-login">
+                    <div class="header-login-box">
+                        <i class="fa fa-user-circle login-icon"></i>
+                        <p>登录</p>
+                    </div>
+                </div>
+                <div class="header-logup">
+                    <div class="header-logup-box">
+                        <i class="fa fa-user-o logup-icon"></i>
+                        <p>注册</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="car-friend-content">
+        <div class="left-side">
+            <div class="left-side-content">
+                <ul>
+                    <li id="sidebar-sign-up"><i class="fa fa-pencil-square-o"></i><p>注册</p></li>
+                    <li id="sidebar-login"><i class="fa fa-user-circle"></i><p>登陆</p></li>
+                    <li id="sidebar-user-info"><i class="fa fa-car"></i><p>车友信息</p></li>
+                    <li id="sidebar-help-page"><i class="fa fa-handshake-o"></i><p>帮助页</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-side">
+            <!--注册-->
+            <div class="right-side-content active log-in car-friend-info">
+                <header class="user-info-header">
+                    <div class="user-information">
+                        <h2 style="color: #1D7AD9">注册</h2>
+                        <span>/</span>
+                        <p>login</p>
+                    </div>
+                </header>
+                <div class="login-page">
+                    <form class="am-form">
+                        <div class="login-group">
+                            <label for="user-name" class="am-form-label">姓名 / Name</label>
+                            <div class="input-box">
+                                <input type="text" id="user-name" placeholder="姓名 / Name">
+                            </div>
+                        </div>
+                        <div class="login-group">
+                            <label for="user-name" class=" am-form-label">昵称 / Nickname</label>
+                            <div class="input-box">
+                                <input type="text" id="nick-name" placeholder="昵称 / Nickname">
+                            </div>
+                        </div>
+                        <div class="login-group">
+                            <label for="user-email" class=" am-form-label">车牌号 / Plate Number</label>
+                            <div class="input-box">
+                                <input type="text" id="user-plateNumber" placeholder="输入你的车牌号 / Email">
+                            </div>
+                        </div>
+                        <div class="login-group">
+                            <label for="user-email" class=" am-form-label">电子邮件 / Email</label>
+                            <div class="input-box">
+                                <input type="email" id="user-email" placeholder="输入你的电子邮件 / Email" autocomplete="autocomplete">
+                            </div>
+                        </div>
+
+                        <div class="login-group">
+                            <label for="user-phone" class=" am-form-label">电话 / Telephone</label>
+                            <div class="input-box">
+                                <input type="tel" id="user-phone" placeholder="输入你的电话号码 / Telephone">
+                            </div>
+                        </div>
+
+                        <div class="login-group">
+                            <label for="user-QQ" class=" am-form-label">身份证</label>
+                            <div class="input-box">
+                                <input type="number" pattern="[0-9]*" id="user-QQ" placeholder="输入你的身份证">
+                            </div>
+                        </div>
+
+                        <div class="login-group">
+                            <label for="user-password" class=" am-form-label">密码 / Password</label>
+                            <div class="input-box">
+                                <input type="password" id="user-password" placeholder="输入你的密码 / Password">
+                            </div>
+                        </div>
+                        <div class="login-group">
+                            <label for="confirm-password" class="am-form-label user-intro">确认密码 / Confirm</label>
+                            <div class="input-box">
+                                <input type="password" id="confirm-password" placeholder="确认密码 / Confirm">
+                            </div>
+                        </div>
+                        <div class="login-group">
+                            <div class="log-up" onclick="getLoginData()">
+                                <input type="button" class="am-btn am-btn-primary">注册账号</input>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--登录-->
+            <div class="right-side-content hidden log-up">
+                <div class="active log-in car-friend-info">
+                    <header class="user-info-header">
+                        <div class="user-information">
+                            <h2 style="color: #1D7AD9">登录</h2>
+                            <span>/</span>
+                            <p>login</p>
+                        </div>
+                    </header>
+                    <div class="login-page">
+                        <form class="am-form">
+                            <div class="login-group">
+                                <label for="user-name" class=" am-form-label">姓名 / Name</label>
+                                <div class="input-box">
+                                    <input type="text" id="login-name" placeholder="姓名 / Name">
+                                </div>
+                            </div>
+                            <div class="login-group">
+                                <label for="user-password" class=" am-form-label">密码 / Password</label>
+                                <div class="input-box">
+                                    <input type="password" id="login-user-password" placeholder="输入你的密码 / Password">
+                                </div>
+                            </div>
+                            <div class="login-group">
+                                <div class="log-up" onclick="getLogupData()" id="loginButtonParentBox">
+                                    <input type="button" class="am-btn am-btn-primary">登录车友会</input>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--个人信息-->
+            <div class="right-side-content hidden personal-info"></div>
+            <!--车友信息-->
+            <div class="right-side-content hidden car-friend-info all-car-friend-infos">
+                <header class="user-info-header">
+                    <div class="user-information">
+                        <h2 style="color: #1D7AD9">车友信息</h2>
+                        <span>/</span>
+                        <p>info</p>
+                    </div>
+                </header>
+                <!--一堆操作     增删改查-->
+                <div class="serious-operates">
+                    <ul  class="clearfix">
+                        <li id="serious-operates1">
+                            <div class="plus-save-delete">
+                                <ul class="clearfix">
+                                    <li id="plus" onclick="disp_prompt()"><input type="button"><i class="fa fa-plus"></i><p>增加</p></li>
+                                    <li id="save"><input type="button"><i class="fa fa-save"></i><p>保存</p></li>
+                                    <li id="delete" onclick="Delete_All()"><input type="button"><i class="fa fa-bitbucket"></i><p>删除</p></li>
+                                    <li id="restore" onclick="restore_allData()"><input type="button"><i class="fa fa-bank"></i><p>恢复</p></li>
+                                    <li id="sort"><input type="button"><i class="fa fa-sort"></i><p>排序</p></li>
+                                    <li id="age-sort"><input type="button"><i class="fa fa-sort"></i><p>年龄排序</p></li>
+                                    <li id="drive-age-sort"><input type="button"><i class="fa fa-sort"></i><p>驾龄排序</p></li>
+                                    <li id="car-cost-sort"><input type="button"><i class="fa fa-sort"></i><p>车款排序</p></li>
+                                    <li id="id-sort"><input type="button"><i class="fa fa-sort"></i><p>ID排序</p></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="serious-operates2">
+                            <div class="search">
+                                <input type="search" placeholder="请输入搜索内容" id="searchBox">
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="all-user-info">
+                    <form class="user-info-form">
+                        <table class="user-info-table table-striped">
+                            <thead>
+                            <tr class="table-header">
+                                <th class="table-check"><input type="checkbox"/></th>
+                                <th class="table-id">ID</th>
+                                <th class="table-name">会员名</th>
+                                <th class="table-nickname">昵称</th>
+                                <th class="table-gender">性别</th>
+                                <th class="table-occupation">职业</th>
+                                <th class="table-drive-ages">驾龄</th>
+                                <th class="table-age">年龄</th>
+                                <th class="table-type">车辆品牌</th>
+                                <th class="table-pattern">车款(万元)</th>
+                                <th class="table-plate-number">车牌号</th>
+                                <th class="table-color">颜色</th>
+                                <th class="table-set">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody id="person-table">
+            
+                            </tbody>
+                        </table>
+                        <div class="am-cf"><input type="text" value=" " class="total-car-friend-num"></div>
+                        <hr/>
+                    </form>
+                </div>
+            </div>
+            <!--帮助页-->
+            <div class="right-side-content hidden help car-friend-info">
+                <header class="user-info-header">
+                    <div class="user-information">
+                        <h2 style="color: #1D7AD9">帮助</h2>
+                        <span>/</span>
+                        <p>Read Me</p>
+                    </div>
+                </header>
+                <div class="help-page-content">
+                    <div class="content-info">
+                        <h1>车友会</h1>
+                        <p>随着现代化生活水平的提高，家用汽车越来越成为生活中的必需品。了解车友信息便于车友之间的交流和组织活动。
+                        该系统要求开发一款车友俱乐部软件，通过该软件可以方便的查询车友的信息，了解车友的动态信息，发起车友活动等功能。</p>
+                    </div>
+                    <div class="main-functions">
+                        <h1>主要功能</h1>
+                        <ul>
+                            <li>
+                                <label>1.注册</label>
+                                <p>注册界面，用户需要输入姓名、俱乐部内昵称、车牌号、邮箱地址、手机号码、QQ号，以及初始化密码来完成注册</p>
+                            </li>
+                            <li>
+                                <label>2.登录</label>
+                                <p>用户注册完成过后，可以随时随地的通过输入自己的姓名、昵称、邮箱地址以及密码来完成登录</p>
+                            </li>
+                            <li>
+                                <label>3.车友信息库</label>
+                                <p>登录车友会之后，您可以在车友信息一栏里面浏览车友们的信息，包括其姓名，年龄，驾龄等，当然，一些车主的 <br>个人信息我们会对其进行私密保护处理，以免泄露个人信息，造成不必要的损失，同时，您也可以在车友信息界面进
+                                    <br>行增添信息，删除信息，搜索对应关键词以及将车友信息按照一定的规律排序等。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/jQuery library/jquery-3.3.1.min.js"></script>
+<script src="lib/less.js-master/dist/less.min.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript">
+    //获取数据
+    $.ajax({
+        url: "http://127.0.0.1:8081/find",
+        type: "get",
+        async: false,
+        success: function (resp) {
+            console.log(resp.data[1].name);
+            var s="";
+            //读取车辆数据
+            for(var i=0;i<resp.data.length;i++){
+                    s = "<tr><td class='checkbox'><input type='checkbox'/></td><td class='number'>"+i+"</td><td class='name'><a href='#'>" +resp.data[i].name+ "</a></td><td class='nickname'>" +resp.data[i].nickname+ "</td><td class='gender'>" +resp.data[i].gender+ "</td><td class='occupation'>" +resp.data[i].occupation+ "</td><td class='drive-ages'>" +resp.data[i].drage+ "</td><td class='age'>" +resp.data[i].age+ "</td><td class='type'>" +resp.data[i].brand+ "</td><td class='pattern'>" +resp.data[i].money+ "</td><td class='plate-number'>" +resp.data[i].platenumber+ "</td><td class='color'>" +resp.data[i].color+ "</td><td><div class='am-btn-toolbar'><div class='am-btn-group'><div class='am-btn  am-text-danger am-hide-sm-only'><div class='button-style' onclick='Delete(this)'><i class='fa fa-trash-o'></i><p>删除</p></div></div></div></div></td></td>";
+                    $("#person-table").append(s);
+                    s="";
+                }
+            /*排序*/
+            /*获取表格*/
+            var getTable = $(".user-info-table");
+            /*获取表格头*/
+            var getTableHead = getTable.find("thead");
+            /*获取表头主体*/
+            var getTbody = getTable.find("tbody");
+            /*获取主体下面的tr*/
+            var getTr = getTbody.find("tr");
+            var clickToSort = function () {
+                /*获取几个排序按钮*/
+                /*年龄排序按钮*/
+                var $age_sort_button = $("#age-sort");
+                /*驾龄排序按钮*/
+                var $driveAge_sort_button = $("#drive-age-sort");
+                /*车款排序按钮*/
+                var $carCost_sort_button = $("#car-cost-sort");
+                /*ID排序按钮*/
+                var $id_sort_button = $("#id-sort");
+
+                /*获取当前点击对应的表头的列号*/
+                /*年龄头对应的列号*/
+                var age_head = getTableHead.find("tr").find("th").index($(".table-age"));
+                console.log(age_head);
+                /*驾龄头对应的列号*/
+                var driveAge_head = getTableHead.find("tr").find("th").index($(".table-drive-ages"));
+                /*ID头对应的列号*/
+                var ID_head = getTableHead.find("tr").find("th").index($(".table-id"));
+                /*车款头对应的列号*/
+                var carCost = getTableHead.find("tr").find("th").index($(".table-pattern"));
+
+                /*点击排序*/
+                /*点击年龄排序*/
+                $age_sort_button.on("click",function () {
+                    console.log("按照年龄排序");
+                    sortFun(age_head);
+                });
+                /*点击驾龄排序*/
+                $driveAge_sort_button.on("click",function () {
+                    sortFun(driveAge_head);
+                });
+                /*点击车款排序*/
+                $carCost_sort_button.on("click",function () {
+                    sortFun(carCost);
+                });
+                /*点击ID排序*/
+                $id_sort_button.on("click",function () {
+                    sortFun(ID_head);
+                });
+            };
+            /*排序实现*/
+            var sortFun = function (index) {
+                var trContentArr = new Array();
+                getTr.each(function () {
+                    /*找到所有的td标签*/
+                    var all_tds = $(this).find("td");
+                    trContentArr.push($(all_tds[index]).html() + "author" + $(this).html());
+                    /*清空*/
+                    $(this).html("");
+                });
+                var len = trContentArr.length;
+                /*选择排序*/
+                for (var i = 0; i < len; i++){
+                    for (var j = i + 1; j < len; j++){
+                        /*获取当前值*/
+                        var value1 = trContentArr[i].split("author")[0];
+                        /*获取其下面的一个值*/
+                        var value2 = trContentArr[j].split("author")[0];
+                        if(parseFloat(value1) > parseFloat(value2)){//如果当前值 大于 下一个值
+                            var temp = trContentArr[j];//那么就记住 大 的那个值
+                            trContentArr[j] = trContentArr[i];
+                            trContentArr[i] = temp;
+                        }
+                    }
+                }
+                /*匹配的值返回表格*/
+                for (var i = 0; i < len ;i++ ){
+                    $("tbody tr:eq(" + i + ")").html(trContentArr[i].split("author")[1]);
+                }
+            };
+            clickToSort();
+            /*搜索实现*/
+            var searchFun = function () {
+                var $sea=$('#searchBox').val();
+                //先隐藏全部，再把符合筛选条件的值显示
+                $('table tbody tr').hide().filter(':contains('+$sea+')').show();
+            };
+            $(".fa-search").click(function () {
+                searchFun();
+            });
+        },
+        error: function (resp) {
+            console.log(resp);
+        }
+    });
+    //登录
+   var getLogupData = function () {
+       var logupData = {
+           name:"",
+           password:""
+       }
+       logupData.name = $("#login-name").val();
+       logupData.name = $("#login-user-password").val();
+       // var logindata={name:"wwq",password:"123465"};
+       $.ajax({
+           url: "http://127.0.0.1:8081/login",
+           type: "post",
+           dataType:"json",
+           data: logupData,
+           async: false,
+           success: function (resp) {
+               console.log(resp);
+               if(resp.key==1){
+                    alert("登录成功！")
+               }
+               alert("登录失败！")
+               //返回1为登录成功
+           },
+           error: function (resp) {
+               console.log(resp.key);
+               console.log("gg");
+
+           }
+       });
+   };
+    //删除
+    // var delete_name={name:"wwq"};
+    // $.ajax({
+    //     url: "http://127.0.0.1:8081/delete",
+    //     type: "post",
+    //     dataType: "json",
+    //     data: delete_name,
+    //     async: false,
+    //     success: function (resp) {
+    //         console.log(resp);
+    //         //返回3为删除成功
+    //     },
+    //     error: function (resp) {
+    //         console.log(resp);
+    //     }
+    // });
+    /*获取注册的时候输入的值*/
+    var getLoginData = function () {
+        var data = {
+            name:"",
+            nickname:"",
+            platenumebr:"",
+            email:"",
+            tel:"",
+            qq:"",
+            password:""
+        }
+        data.name = $("#user-name").val();
+        data.nickname = $("#nick-name").val();
+        data.email = $("#user-email").val();
+        data.password = $("#user-password").val();
+        data.tel = $("#user-phone").val();
+        data.qq = $("#user-QQ").val();
+        data.platenumebr = $("#user-plateNumber").val();
+        //注册
+        // var restdata={name:"wwq",nickname:"wwq",platenumber:"A17000",email:"1111@qq.com",tel:"11111",qq:"dasdsad",password:"123456"};
+        $.ajax({
+            url: "http://127.0.0.1:8081/rest",
+            type: "post",
+            dataType:"json",
+            data: data,
+            async: false,
+            success: function (resp) {
+                console.log(resp);
+            },
+            error: function (resp) {
+                console.log(resp);
+            }
+        });
+    };
+</script>
+</body>
+</html>
