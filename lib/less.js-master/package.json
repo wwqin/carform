@@ -51,7 +51,7 @@
     "source-map": "~0.6.0"
   },
   "devDependencies": {
-    "bootstrap": "3.3.7",
+    "bootstrap": "4.1.2",
     "bootstrap-less-port": "0.3.0",
     "diff": "^3.2.0",
     "git-rev": "^0.2.1",
